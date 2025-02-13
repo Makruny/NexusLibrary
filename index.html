@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Nexus Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="matrix"></canvas>
+
+    <div class="container">
+        <h1 class="glitch">CYBER NEXUS LIBRARY</h1>
+        
+        <div class="access-form" id="access-form">
+            <div class="input-group">
+                <input type="password" 
+                       id="access-code" 
+                       class="input-field" 
+                       placeholder="ENTER ACCESS CODE"
+                       aria-label="Access Code">
+                <button class="button" id="auth-button">AUTHENTICATE</button>
+            </div>
+            <div class="error-message" id="error-message">ACCESS DENIED: INVALID CREDENTIALS</div>
+        </div>
+
+        <div class="terminal" id="terminal">
+            <p>> ACCESS GRANTED - WELCOME TO THE ARCHIVE</p>
+            <ul class="book-list">
+                <!-- Friedrich Nietzsche -->
+                <li class="author-section">FRIEDRICH NIETZSCHE</li>
+                <li><a href="books/thus_spoke_zarathustra.pdf" download>Thus Spoke Zarathustra</a></li>
+                <li><a href="books/beyond_good_evil.pdf" download>Beyond Good and Evil</a></li>
+                <li><a href="books/genealogy_of_morals.pdf" download>On the Genealogy of Morals</a></li>
+                <li><a href="books/twilight_of_idols.pdf" download>Twilight of the Idols</a></li>
+                <li><a href="books/the_antichrist.pdf" download>The Antichrist</a></li>
+
+                <!-- Fyodor Dostoevsky -->
+                <li class="author-section">FYODOR DOSTOEVSKY</li>
+                <li><a href="books/crime_and_punishment.pdf" download>Crime and Punishment</a></li>
+                <li><a href="books/brothers_karamazov.pdf" download>The Brothers Karamazov</a></li>
+                <li><a href="books/notes_from_underground.pdf" download>Notes from Underground</a></li>
+                <li><a href="books/the_idiot.pdf" download>The Idiot</a></li>
+                <li><a href="books/demons.pdf" download>Demons</a></li>
+
+                <!-- Albert Camus -->
+                <li class="author-section">ALBERT CAMUS</li>
+                <li><a href="books/the_stranger.pdf" download>The Stranger</a></li>
+                <li><a href="books/the_myth_of_sisyphus.pdf" download>The Myth of Sisyphus</a></li>
+                <li><a href="books/the_plague.pdf" download>The Plague</a></li>
+                <li><a href="books/the_rebel.pdf" download>The Rebel</a></li>
+                <li><a href="books/the_fall.pdf" download>The Fall</a></li>
+
+                <!-- Sigmund Freud -->
+                <li class="author-section">SIGMUND FREUD</li>
+                <li><a href="books/interpretation_of_dreams.pdf" download>The Interpretation of Dreams</a></li>
+                <li><a href="books/civilization_and_its_discontents.pdf" download>Civilization and Its Discontents</a></li>
+                <li><a href="books/beyond_the_pleasure_principle.pdf" download>Beyond the Pleasure Principle</a></li>
+                <li><a href="books/ego_and_id.pdf" download>The Ego and the Id</a></li>
+                <li><a href="books/totem_and_taboo.pdf" download>Totem and Taboo</a></li>
+
+                <!-- Stoic Philosophers -->
+                <li class="author-section">STOIC MASTERS</li>
+                <li><a href="books/meditations.pdf" download>Meditations - Marcus Aurelius</a></li>
+                <li><a href="books/letters_from_a_stoic.pdf" download>Letters from a Stoic - Seneca</a></li>
+                <li><a href="books/enchiridion.pdf" download>The Enchiridion - Epictetus</a></li>
+                <li><a href="books/discourses.pdf" download>Discourses - Epictetus</a></li>
+                <li><a href="books/on_the_shortness_of_life.pdf" download>On the Shortness of Life - Seneca</a></li>
+
+                <!-- Robert Greene -->
+                <li class="author-section">ROBERT GREENE</li>
+                <li><a href="books/48_laws_of_power.pdf" download>The 48 Laws of Power</a></li>
+                <li><a href="books/art_of_seduction.pdf" download>The Art of Seduction</a></li>
+                <li><a href="books/33_strategies_of_war.pdf" download>The 33 Strategies of War</a></li>
+                <li><a href="books/laws_of_human_nature.pdf" download>The Laws of Human Nature</a></li>
+                <li><a href="books/mastery.pdf" download>Mastery</a></li>
+
+                <!-- James Clear -->
+                <li class="author-section">JAMES CLEAR</li>
+                <li><a href="books/atomic_habits.pdf" download>Atomic Habits</a></li>
+
+                <!-- Thomas Erikson -->
+                <li class="author-section">THOMAS ERIKSON</li>
+                <li><a href="books/surrounded_by_idiots.pdf" download>Surrounded by Idiots</a></li>
+                <li><a href="books/surrounded_by_psychopaths.pdf" download>Surrounded by Psychopaths</a></li>
+                <li><a href="books/surrounded_by_narcissists.pdf" download>Surrounded by Narcissists</a></li>
+                <li><a href="books/surrounded_by_energy_vampires.pdf" download>Surrounded by Energy Vampires</a></li>
+
+                <!-- Franz Kafka -->
+                <li class="author-section">FRANZ KAFKA</li>
+                <li><a href="books/the_trial.pdf" download>The Trial</a></li>
+                <li><a href="books/the_castle.pdf" download>The Castle</a></li>
+                <li><a href="books/metamorphosis.pdf" download>The Metamorphosis</a></li>
+                <li><a href="books/the_judgment.pdf" download>The Judgment</a></li>
+                <li><a href="books/in_the_penal_colony.pdf" download>In the Penal Colony</a></li>
+
+                <!-- Astronomy, Astrophysics, Quantum Mechanics -->
+                <li class="author-section">COSMIC EXPLORATIONS</li>
+                <li><a href="books/cosmos.pdf" download>Cosmos - Carl Sagan</a></li>
+                <li><a href="books/a_brief_history_of_time.pdf" download>A Brief History of Time - Stephen Hawking</a></li>
+                <li><a href="books/the_universe_in_a_nutshell.pdf" download>The Universe in a Nutshell - Stephen Hawking</a></li>
+                <li><a href="books/black_holes.pdf" download>Black Holes and Time Warps - Kip Thorne</a></li>
+                <li><a href="books/astrophysics_for_people_in_a_hurry.pdf" download>Astrophysics for People in a Hurry - Neil deGrasse Tyson</a></li>
+                <li><a href="books/quantum_universe.pdf" download>The Quantum Universe - Brian Cox & Jeff Forshaw</a></li>
+                <li><a href="books/why_does_e_mc2.pdf" download>Why Does E=mc²? - Brian Cox & Jeff Forshaw</a></li>
+                <li><a href="books/the_fabric_of_the_cosmos.pdf" download>The Fabric of the Cosmos - Brian Greene</a></li>
+                <li><a href="books/until_the_end_of_time.pdf" download>Until the End of Time - Brian Greene</a></li>
+
+                <!-- Business & Financial Thinking -->
+                <li class="author-section">BUSINESS & FINANCIAL MASTERY</li>
+                <li><a href="books/zero_to_one.pdf" download>Zero to One - Peter Thiel</a></li>
+                <li><a href="books/lean_startup.pdf" download>The Lean Startup - Eric Ries</a></li>
+                <li><a href="books/thinking_in_bets.pdf" download>Thinking in Bets - Annie Duke</a></li>
+                <li><a href="books/the_intelligent_investor.pdf" download>The Intelligent Investor - Benjamin Graham</a></li>
+                <li><a href="books/rich_dad_poor_dad.pdf" download>Rich Dad Poor Dad - Robert Kiyosaki</a></li>
+                <li><a href="books/blue_ocean_strategy.pdf" download>Blue Ocean Strategy - W. Chan Kim & Renée Mauborgne</a></li>
+                <li><a href="books/good_to_great.pdf" download>Good to Great - Jim Collins</a></li>
+                <li><a href="books/the_10x_rule.pdf" download>The 10X Rule - Grant Cardone</a></li>
+                <li><a href="books/start_with_why.pdf" download>Start With Why - Simon Sinek</a></li>
+                <li><a href="books/the_4_hour_workweek.pdf" download>The 4-Hour Workweek - Tim Ferriss</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
